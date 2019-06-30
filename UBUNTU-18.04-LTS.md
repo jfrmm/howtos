@@ -1,3 +1,5 @@
+[< Back](./README.md)
+
 # Linux Mint 19.1
 
 # Table of contents
@@ -137,3 +139,5 @@ Then run
 ```
 sh install_source_code_pro.sh
 ```
+
+Copyright 2019 jfrmm.
