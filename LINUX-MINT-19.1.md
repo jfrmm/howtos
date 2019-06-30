@@ -16,6 +16,7 @@ This how-to should also apply to >= Ubuntu 18.04 LTS.
   - [Hibernate](#hibernate)
   - [VS Code](#vs-code)
   - [Fonts](#fonts)
+  - [DisplayLink](#displaylink)
 
 ## DNS
 
@@ -143,5 +144,11 @@ Then run
 ```
 sh install_source_code_pro.sh
 ```
+
+### DisplayLink
+
+DisplayLink provides official support up to Ubuntu 18.04 LTS. So, just head to the [download link](https://www.displaylink.com/downloads/ubuntu), and install their package. It should work out of the box.
+
+> If you're having issues setting up the displays, you may use `arandr`, which is a GUI for `xrandr` for helping with multiple display setup. Install with `sudo apt install arandr`.
 
 Copyright 2019 jfrmm.
