@@ -2,6 +2,8 @@
 
 # Linux Mint 19.1
 
+This how-to should also apply to >= Ubuntu 18.04 LTS. 
+
 # Table of contents
 
 - [DNS](#dns)
@@ -10,7 +12,7 @@
 - [Docker](#docker)
 - [Windows VM](#windows-vm)
 - [Nice to haves](#nice-to-haves)
-  - [Timeshift](#timeshift)
+  - [Backups](#backups)
   - [Hibernate](#hibernate)
   - [VS Code](#vs-code)
   - [Fonts](#fonts)
@@ -85,9 +87,11 @@ Unzip the file, and import it with VirtualBox `File > Import Appliance`. Configu
 
 ## Nice to haves
 
-### Timeshift
+### Backups
 
-Enable Timeshift, with the defaults, to keep your work safe.
+Linux Mint should point you towards using the included backup tool, as soon as you use the software update tool. Just follow the wizard with the default settings.
+
+> In Ubuntu, an alternative could be to install Timeshift, with `sudo apt install timeshift`. It may be needed to enable `cronie` system service.
 
 ### Hibernate
 
