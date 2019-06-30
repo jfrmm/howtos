@@ -12,6 +12,7 @@
   - [VS Code](#vs-code)
   - [Fonts](#fonts)
   - [DisplayLink](#displaylink)
+  - [Swappiness](#swappiness)
 
 ## Git
 
@@ -134,6 +135,26 @@ You can now setup your displays with the inbuilt tool, or with `arandr`
 
 ```
 sudo pacman -Syu arandr
+```
+
+### Swappiness
+
+Lowering your swappiness level lower can be beneficial. Edit this file
+
+```
+sudo nano /etc/sysctl.d/99-sysctl.conf
+```
+
+Add the line
+
+```
+vm.swappiness=10
+```
+
+Restart and check if swappiness is correctly set
+
+```
+cat /sys/fs/cgroup/memory/memory.swappiness
 ```
 
 Copyright 2019 jfrmm.
