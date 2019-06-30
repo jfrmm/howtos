@@ -11,6 +11,7 @@
   - [Backups](#backups)
   - [VS Code](#vs-code)
   - [Fonts](#fonts)
+  - [DisplayLink](#displaylink)
 
 ## Git
 
@@ -86,6 +87,53 @@ Install Fira Code, a nice ligature compatible font
 
 ```
 sudo pacman -Syu otf-fira-code
+```
+
+Also install Emoji support
+
+```
+sudo pacman -Syu noto-fonts-emoji
+```
+
+### DisplayLink
+
+DisplayLink does not provide official Arch-based distros support, but the driver is open-source and it's available in AUR.
+
+First, check your kernel version
+
+```
+uname -r
+```
+
+And then install the kernel headers (4.19 in this example)
+
+```
+sudo pacman -Syu linux419-headers
+```
+
+Build the DisplayLink from AUR
+
+```
+pamac build displaylink
+```
+
+Finally, start and enable the service
+
+```
+sudo systemctl start displaylink
+sudo systemctl enable displaylink
+```
+
+Check if the service started with no errors
+
+```
+sudo systemctl status displaylink
+```
+
+You can now setup your displays with the inbuilt tool, or with `arandr`
+
+```
+sudo pacman -Syu arandr
 ```
 
 Copyright 2019 jfrmm.

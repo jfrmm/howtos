@@ -17,7 +17,7 @@ Instructions [here](./LINUX-MINT-19.1.md)
 
 # Manjaro 18.0.4
 
-Instructions [here](./MANJARO-18.0.4.md).
+Instructions [here](./MANJARO-18.0.4.md)
 
 # Windows 10 1903
 
