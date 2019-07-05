@@ -109,6 +109,12 @@ sudo snap install code --classic
 
 ### Fonts
 
+Install some MS compatible fonts
+
+```
+sudo apt install fonts-crosextra-carlito fonts-crosextra-caladea
+```
+
 Install Fira Code, a nice ligature compatible font
 
 ```
