@@ -2,7 +2,7 @@
 
 # Linux Mint 19.1
 
-This how-to should also apply to >= Ubuntu 18.04 LTS. 
+This how-to should also apply to >= Ubuntu 18.04 LTS.
 
 # Table of contents
 
@@ -17,6 +17,7 @@ This how-to should also apply to >= Ubuntu 18.04 LTS.
   - [VS Code](#vs-code)
   - [Fonts](#fonts)
   - [DisplayLink](#displaylink)
+  - [Swappiness](#swappiness)
 
 ## DNS
 
@@ -108,6 +109,12 @@ sudo snap install code --classic
 
 ### Fonts
 
+Install some MS compatible fonts
+
+```
+sudo apt install fonts-crosextra-carlito fonts-crosextra-caladea
+```
+
 Install Fira Code, a nice ligature compatible font
 
 ```
@@ -150,5 +157,25 @@ sh install_source_code_pro.sh
 DisplayLink provides official support up to Ubuntu 18.04 LTS. So, just head to the [download link](https://www.displaylink.com/downloads/ubuntu), and install their package. It should work out of the box.
 
 > If you're having issues setting up the displays, you may use `arandr`, which is a GUI for `xrandr` for helping with multiple display setup. Install with `sudo apt install arandr`.
+
+### Swappiness
+
+Lowering your swappiness level lower can be beneficial. Edit this file
+
+```
+sudo nano /etc/sysctl.conf
+```
+
+Add the line
+
+```
+vm.swappiness=10
+```
+
+Restart and check if swappiness is correctly set
+
+```
+cat /proc/sys/vm/swappiness
+```
 
 Copyright 2019 jfrmm.

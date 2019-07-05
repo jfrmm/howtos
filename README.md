@@ -1,30 +1,36 @@
-# How-Tos
+# How-tos
 
-A set of how-tos for setting up different development environments and tools.
-
-> Some environments may be more outdated than others.
+A set of useful how-tos.
 
 # Table of contents
 
-- [Linux Mint 19.1](#linux-mint-19.1)
-- [Manjaro 18.0.4](#manjaro-18.0.4)
-- [Windows 10 1903](#windows-10-1903)
-- [Laradock](#laradock)
+- [OSes](#oses)
+  - [Linux Mint 19.1](#linux-mint-19.1)
+  - [Manjaro 18.0.4](#manjaro-18.0.4)
+  - [Windows 10 1903](#windows-10-1903)
+- [Environments](#environments)
+  - [Laradock](#laradock)
+- [Tools](#tools)
+  - [Git cheatsheet](#git-cheatsheet)
 
-# Linux Mint 19.1
+# OSes
 
-Instructions [here](./LINUX-MINT-19.1.md)
+Some guides for setting up different development environments and tools.
 
-# Manjaro 18.0.4
+> Some environments may be outdated.
 
-Instructions [here](./MANJARO-18.0.4.md)
+## [Linux Mint 19.1](./LINUX-MINT-19.1.md)
 
-# Windows 10 1903
+## [Manjaro 18.0.4](./MANJARO-18.0.4.md)
 
-Instructions [here](./WINDOWS-10-1903.md)
+## [Windows 10 1903](./WINDOWS-10-1903.md)
 
-# Laradock
+# Environments
 
-Instructions [here](./LARADOCK.md)
+## [Laradock](./LARADOCK.md)
+
+# Tools
+
+## [Git cheatsheet](./GIT-CHEATSHEET.md)
 
 Copyright 2019 jfrmm.
