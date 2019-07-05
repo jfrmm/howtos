@@ -4,7 +4,7 @@
 
 Git is a powerful versioning tool. This cheatsheet has some useful commands.
 
-Git is a distributed versioning tool. All the repositories are copies of each other. But there's typically one that is chosen to be the one to which all the other repositories push and pull code, the `origin`. The local changes are `commited` to the local repository, and then `pushed` to the `origin`. Changes from other repositories are `pulled` from the `origin`.
+Git is a distributed versioning tool. All the repositories are copies of each other. But there's typically one that is chosen to be the one to which all the other repositories push and pull code, the **remote**. The local changes are **commited** to the **local** repository, and then **pushed** to the **origin**. Changes from other repositories are **pulled** from the **origin**.
 
 - [Create](#create)
   - [New](#new)
