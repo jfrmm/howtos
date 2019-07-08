@@ -12,7 +12,7 @@ A set of useful how-tos.
   - [Laradock](#laradock)
 - [Tools](#tools)
   - [Git cheatsheet](#git-cheatsheet)
-  - [Git cheatsheet](#git-cheatsheet)
+  - [GitFlow cheatsheet](#gitflow-cheatsheet)
 
 # OSes
 
@@ -34,6 +34,6 @@ Some guides for setting up different development environments and tools.
 
 ## [Git cheatsheet](./GIT-CHEATSHEET.md)
 
-## [GitFlow cheatsheet](./GIT-FLOW-CHEATSHEET.md)
+## [GitFlow cheatsheet](./GITFLOW-CHEATSHEET.md)
 
 Copyright 2019 jfrmm.
