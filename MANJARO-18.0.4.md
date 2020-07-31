@@ -1,3 +1,5 @@
+[< Back](./README.md)
+
 How to basic setup Manjaro 18.0.4.
 
 ## Welcome
