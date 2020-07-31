@@ -1,6 +1,4 @@
-[< Back](./README.md)
-
-# Windows
+How to basic setup Windows 10 1903.
 
 ## Chocolatey
 
@@ -49,4 +47,6 @@ https://forum.laragon.org/topic/1007/tutorial-how-to-add-another-python-version-
 
 Follow this [tutorial](https://forum.laragon.org/topic/264/tutorial-how-to-add-xdebug-to-laragon)
 
-Copyright 2019 jfrmm.
+---
+
+Copyright 2020 jfrmm.
