@@ -1,23 +1,8 @@
 [< Back](./README.md)
 
-# Linux Mint 19.1
+How to basic setup Linux Mint 19.1.
 
-This how-to should also apply to >= Ubuntu 18.04 LTS.
-
-# Table of contents
-
-- [DNS](#dns)
-- [VPN](#vpn)
-- [Git](#git)
-- [Docker](#docker)
-- [Windows VM](#windows-vm)
-- [Nice to haves](#nice-to-haves)
-  - [Backups](#backups)
-  - [Hibernate](#hibernate)
-  - [VS Code](#vs-code)
-  - [Fonts](#fonts)
-  - [DisplayLink](#displaylink)
-  - [Swappiness](#swappiness)
+> This how-to should also apply to Ubuntu 18.04 LTS.
 
 ## DNS
 
@@ -67,7 +52,9 @@ Add your user to the `docker` group, and restart
 sudo usermod -aG docker $USER
 ```
 
-## IE11 VM
+> Permissions won't be applied immediately, logoff or reboot
+
+## Windows VM
 
 Microsoft makes available a set of VM's with Internet Explorer. These are legal for testing purposes.
 
@@ -156,26 +143,34 @@ sh install_source_code_pro.sh
 
 DisplayLink provides official support up to Ubuntu 18.04 LTS. So, just head to the [download link](https://www.displaylink.com/downloads/ubuntu), and install their package. It should work out of the box.
 
+> You must have **Secure Boot** disabled in your BIOS.
+
 > If you're having issues setting up the displays, you may use `arandr`, which is a GUI for `xrandr` for helping with multiple display setup. Install with `sudo apt install arandr`.
+
+> You may encounter trailing/flickering mouse cursor issues, still no definitive solution, but there's a workaround, `sudo systemctl restart lightdm` after login.
 
 ### Swappiness
 
-Lowering your swappiness level lower can be beneficial. Edit this file
+The Linux kernel handles modern day SSDs well. But you can read about swap [here](https://chrisdown.name/2018/01/02/in-defence-of-swap.html), and tweak it if you want.
+
+Edit/touch this file
 
 ```
-sudo nano /etc/sysctl.conf
+sudo nano /etc/sysctl.d/99-sysctl.conf
 ```
 
 Add the line
 
 ```
-vm.swappiness=10
+vm.swappiness=<value-between-0-and-100>
 ```
 
 Restart and check if swappiness is correctly set
 
 ```
-cat /proc/sys/vm/swappiness
+cat /sys/fs/cgroup/memory/memory.swappiness
 ```
 
-Copyright 2019 jfrmm.
+---
+
+Copyright 2020 jfrmm.
