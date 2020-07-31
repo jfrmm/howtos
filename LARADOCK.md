@@ -1,6 +1,6 @@
 [< Back](./README.md)
 
-# Laradock
+How to setup a Laradock environment for your PHP/Laravel app.
 
 ## Add Laradock to existing Laravel app
 
@@ -75,5 +75,7 @@ docker-compose exec workspace bash
 ```
 
 > The full instructions can be found [here](https://laradock.io/getting-started/#installation)
+
+---
 
 Copyright 2019 jfrmm.
