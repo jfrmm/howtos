@@ -27,7 +27,7 @@ Some guides for setting up different development environments and tools.
 
 ## [Windows 10 1903](./WINDOWS-10-1903.md)
 
-## [Pop OS 20.04 LTS](./POP-OS-20.04-LTS.md)
+## [Pop OS 20.04 LTS](./POP-OS-20.04.md)
 
 # Environments
 
