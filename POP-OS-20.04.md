@@ -55,6 +55,36 @@ Download the [VM](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms
 
 Unzip the file, and import it with VirtualBox `File > Import Appliance`. Configure the VM as desired (RAM, enable USB2.0, etc). Start it, install Guest Additions (`Devices - Insert Guest Additions CD image`), install the software you need, and create a snapshot. The license is valid for 90 days, and can be rearmed about 5 times. But having a snapshot around is a good idea, to have a starting point in case the activation fails.
 
+## PHP
+
+To have multiple PHP versions available on the system, we'll need a PPA. In this example, we'll install PHP 5.6, run
+
+```
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+sudo apt install php5.6
+```
+
+If you need to add CURL for this specific PHP version, run
+
+```
+sudo apt install php5.6-curl
+```
+
+> Typically, to install another extension, just add it to `php5.6-`
+
+To change between PHP versions, use `update-alternatives`. In the following example, we'll be changing PHP, PHP-CGI and PHAR versions
+
+```
+sudo update-alternatives --config php
+sudo update-alternatives --config php-cgi
+sudo update-alternatives --config phar
+sudo update-alternatives --config phar.phar
+```
+
+Check the available version with `php -v`
+
 ## Nice to haves
 
 ### Backups
