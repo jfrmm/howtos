@@ -99,7 +99,7 @@ Start the app and follow the wizard. It should be simple, select RSYNC method an
 
 ### Hibernate
 
-First, you need to have the correct amount of swap. Check here the size needed for your swap partition.
+First, you need to have the correct amount of swap. Check [here](https://help.ubuntu.com/community/SwapFaq#How_much_swap_do_I_need.3F) the size needed for your swap partition.
 
 Then, it should be a matter of just adding the following file
 
