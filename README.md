@@ -9,6 +9,7 @@ A set of useful how-tos.
   - [Manjaro 18.0.4](#manjaro-18.0.4)
   - [Windows 10 1903](#windows-10-1903)
   - [Pop OS 20.04 LTS](#pop-os-20.04-lts)
+  - [Fedora 33](#fedora-33)
 - [Environments](#environments)
   - [Laradock](#laradock)
 - [Tools](#tools)
@@ -28,6 +29,8 @@ Some guides for setting up different development environments and tools.
 ## [Windows 10 1903](./WINDOWS-10-1903.md)
 
 ## [Pop OS 20.04 LTS](./POP-OS-20.04.md)
+
+## [Fedora 33](./FEDORA-33.md)
 
 # Environments
 
